@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSpace | Stories That Matter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">BlogSpace<span>.</span></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#blogs">Explore</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="nav-button">Join Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="tagline">YOUR SPACE. YOUR STORIES.</p>
+            <h1>Every story deserves<br>to be <span>heard.</span></h1>
+            <p class="hero-text">
+                Discover fresh ideas, share your thoughts,
+                and connect with people through the power of writing.
+            </p>
+            <a href="create-blog.html" class="primary-button">
+                Write a Story →
+            </a>
+        </section>
+
+        <section class="blogs" id="blogs">
+            <div class="section-heading">
+                <div>
+                    <p class="tagline">THE LATEST</p>
+                    <h2>Explore Stories</h2>
+                </div>
+                <input type="text" id="searchInput"
+                       placeholder="Search stories...">
+            </div>
+
+            <div class="blog-grid" id="blogGrid">
+                <article class="blog-card">
+                    <div class="blog-image image-one">🌿</div>
+                    <div class="blog-content">
+                        <span class="category">LIFESTYLE</span>
+                        <h3>Finding Beauty in Simple Things</h3>
+                        <p>Sometimes the smallest moments bring the greatest happiness.</p>
+                        <button class="read-button">Read more →</button>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image image-two">💻</div>
+                    <div class="blog-content">
+                        <span class="category">TECHNOLOGY</span>
+                        <h3>My Journey into Web Development</h3>
+                        <p>Learning to turn creative ideas into real digital experiences.</p>
+                        <button class="read-button">Read more →</button>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image image-three">✈️</div>
+                    <div class="blog-content">
+                        <span class="category">TRAVEL</span>
+                        <h3>Exploring the World Around Us</h3>
+                        <p>New places, new experiences, and unforgettable memories.</p>
+                        <button class="read-button">Read more →</button>
+                    </div>
+                </article>
+            </div>
+            <p id="emptyMessage" class="empty-message" hidden>
+                No stories found. Try another search.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 BlogSpace. Made with creativity and code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

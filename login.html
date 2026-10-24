@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | BlogSpace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">BlogSpace<span>.</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="auth-container">
+        <section class="auth-card">
+            <p class="tagline">WELCOME BACK</p>
+            <h1>Login to BlogSpace</h1>
+            <p class="auth-description">Continue sharing your stories with the world.</p>
+
+            <form id="loginForm">
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+
+                <button type="submit" class="auth-button">Login</button>
+            </form>
+
+            <p id="loginMessage" class="form-message" aria-live="polite"></p>
+            <p class="auth-switch">Don't have an account? <a href="register.html">Register</a></p>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("loginMessage").textContent =
+                "Login form validated! Authentication will be added in a later step.";
+        });
+    </script>
+</body>
+</html>

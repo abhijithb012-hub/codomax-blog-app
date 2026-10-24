@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | BlogSpace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">BlogSpace<span>.</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="auth-container">
+        <section class="auth-card">
+            <p class="tagline">JOIN OUR COMMUNITY</p>
+            <h1>Create your account</h1>
+            <p class="auth-description">Start sharing your ideas and stories.</p>
+
+            <form id="registerForm">
+                <label for="name">Full name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" minlength="6"
+                       placeholder="At least 6 characters" required>
+
+                <button type="submit" class="auth-button">Create Account</button>
+            </form>
+
+            <p id="registerMessage" class="form-message" aria-live="polite"></p>
+            <p class="auth-switch">Already have an account? <a href="login.html">Login</a></p>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("registerMessage").textContent =
+                "Registration form validated! Account creation will be added later.";
+        });
+    </script>
+</body>
+</html>

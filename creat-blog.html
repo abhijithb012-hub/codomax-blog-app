@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog | BlogSpace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">BlogSpace<span>.</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="auth-container">
+        <section class="auth-card">
+            <p class="tagline">SHARE YOUR IDEAS</p>
+            <h1>Create a New Blog</h1>
+            <p class="auth-description">Write something worth sharing with the world.</p>
+
+            <form id="blogForm">
+                <label for="blogTitle">Blog title</label>
+                <input type="text" id="blogTitle"
+                       placeholder="Enter your blog title" maxlength="100" required>
+
+                <label for="blogCategory">Category</label>
+                <select id="blogCategory" required>
+                    <option value="">Choose a category</option>
+                    <option value="Lifestyle">Lifestyle</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Education">Education</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="blogContent">Your story</label>
+                <textarea id="blogContent" rows="7" maxlength="10000"
+                    placeholder="Start writing your story..." required></textarea>
+
+                <button type="submit" class="auth-button">Publish Blog</button>
+            </form>
+
+            <p id="blogMessage" class="form-message" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 BlogSpace. Made with creativity and code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

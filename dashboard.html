@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | BlogSpace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">BlogSpace<span>.</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="create-blog.html">Write a Story</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <p class="tagline">YOUR CREATIVE SPACE</p>
+        <h1>My Dashboard</h1>
+        <p class="auth-description">Manage your stories and share your ideas.</p>
+
+        <a href="create-blog.html" class="primary-button">
+            + Create New Blog
+        </a>
+
+        <section class="dashboard-section">
+            <h2>My Blog Posts</h2>
+            <div id="dashboardPosts" class="blog-grid"></div>
+            <p id="dashboardEmpty" class="empty-message">
+                You haven't written any stories yet. Create your first blog!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 BlogSpace. Made with creativity and code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
